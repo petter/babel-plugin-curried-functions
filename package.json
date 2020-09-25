@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-curried-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petter/babel-plugin-curried-functions.git"
+  },
+  "author": "Petter Sæther Moen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petter/babel-plugin-curried-functions/issues"
+  },
+  "homepage": "https://github.com/petter/babel-plugin-curried-functions#readme"
+}
