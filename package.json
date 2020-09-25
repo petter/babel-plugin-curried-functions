@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/petter/babel-plugin-curried-functions/issues"
   },
-  "homepage": "https://github.com/petter/babel-plugin-curried-functions#readme"
+  "homepage": "https://github.com/petter/babel-plugin-curried-functions#readme",
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.10.4"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/helper-plugin-test-runner": "^7.10.1"
+  }
 }
