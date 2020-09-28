@@ -6,6 +6,22 @@ module.exports = function curriedFunctions({ types: t }) {
     parserOverride(code, opts) {
       return parser.parse(code, opts);
     },
-    visitor: {},
+    visitor: {
+      FunctionDeclaration(path) {
+        if (path.node.curry) {
+          path.node.curry = false;
+          path.replaceWith(
+            t.variableDeclaration("const", [
+              t.variableDeclarator(
+                t.identifier(path.get("id.name").node),
+                t.callExpression(t.identifier("curry"), [
+                  t.toExpression(path.node),
+                ])
+              ),
+            ])
+          );
+        }
+      },
+    },
   };
 };
