@@ -12,6 +12,6 @@ function curry(fn) {
   return curryFactory([]);
 }
 
-const f = curry(function (a, b, c) {
+const f = curry(function f(a, b, c) {
   console.log(a, b, c);
 });
