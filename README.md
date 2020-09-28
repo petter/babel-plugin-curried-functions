@@ -17,7 +17,7 @@ curry function f(a, b, c) {
 ### Out
 
 ```javascript
-function currying(fn) {
+function curry(fn) {
   const numParamsRequired = fn.length;
   function curryFactory(params) {
     return function (...args) {
@@ -31,6 +31,7 @@ function currying(fn) {
   return curryFactory([]);
 }
 
-const a = currying(function(a, b, c) {
+const a = curry(function(a, b, c) {
     ...
 });
+```
