@@ -21,10 +21,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
+    "babel-curry-syntax-parser": "^7.12.0",
     "babel-plugin-tester": "^9.2.0",
     "jest": "^26.4.2"
   },
-  "dependencies": {
-    "babel-curry-syntax": "^1.0.0"
-  }
+  "dependencies": {}
 }
