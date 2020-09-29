@@ -1,4 +1,4 @@
-const parser = require("../../babel-curry-syntax/packages/babel-parser/lib/index");
+const parser = require("babel-curry-syntax/packages/babel-parser");
 
 const curryFunc = parser.parse(
   `
