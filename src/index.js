@@ -16,7 +16,7 @@ function curry(fn) {
   return curryFactory([]);
 }
 `
-).program.body[0];
+, {}).program.body[0];
 
 let hasInsertedCurry = false;
 function insertCurry(path, t) {
